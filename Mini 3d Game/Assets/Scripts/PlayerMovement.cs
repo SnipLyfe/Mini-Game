@@ -14,24 +14,24 @@ public class PlayerMovement : MonoBehaviour
 	// are using it to mess with physics.
 	void FixedUpdate()
 	{
-		if (Input.GetKey("w"))
+		if (Input.GetKey("a"))
 		{
-			rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+			rb.AddForce(0, 0, sidewaysForce * Time.deltaTime);
 		}
-		if (Input.GetKey("s"))
+		if (Input.GetKey("d"))
 		{
-			rb.AddForce(0, 0, -backwardForce * Time.deltaTime);
+			rb.AddForce(0, 0, -sidewaysForce * Time.deltaTime);
 		}
-		if (Input.GetKey("d"))  // If the player is pressing the "d" key
+		if (Input.GetKey("w"))  // If the player is pressing the "d" key
 		{
 			// Add a force to the right
-			rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+			rb.AddForce(forwardForce * Time.deltaTime, 0, 0);
 		}
 
-		if (Input.GetKey("a"))  // If the player is pressing the "a" key
+		if (Input.GetKey("s"))  // If the player is pressing the "a" key
 		{
 			// Add a force to the left
-			rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+			rb.AddForce(-backwardForce * Time.deltaTime, 0, 0);
 		}
 	}
 }
