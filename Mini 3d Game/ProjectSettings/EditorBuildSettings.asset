@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Mini Game.unity
+    guid: 6102d5522ac4b63438b4ee8351a283f4
+  - enabled: 1
+    path: Assets/LvL 2.unity
+    guid: b93355307ff2f6c4cb42decec7bab8c3
+  - enabled: 1
+    path: Assets/LvL 3.unity
+    guid: cb3c105352f4caa4496a19ac0a4c9f8c
   m_configObjects: {}
